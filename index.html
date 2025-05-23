@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tristan Duchamp - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .experience-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .experience-date {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .cv-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        .cv-button:hover {
+            background: #5a5cb8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-link i {
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            header {
+                padding: 40px 20px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-link {
+                width: 200px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="photo.jpg" alt="Tristan Duchamp" class="profile-img">
+            <h1>Tristan Duchamp</h1>
+            <p class="tagline">Développeur Web | Créateur de Solutions Digitales</p>
+        </header>
+
+        <section class="section">
+            <h2>À Propos</h2>
+            <p>Passionné par le développement web et les nouvelles technologies, je crée des solutions digitales
+                innovantes. Mon objectif est de transformer des idées en applications concrètes qui apportent de la
+                valeur aux utilisateurs.</p>
+        </section>
+
+        <section class="section">
+            <h2>Expériences</h2>
+
+            <div class="experience-item">
+                <div class="experience-title">Développeur Full Stack - Entreprise XYZ</div>
+                <div class="experience-date">Janvier 2023 - Présent</div>
+                <p>Développement d'applications web modernes avec React et Node.js. Mise en place de solutions cloud et
+                    optimisation des performances. Collaboration avec une équipe agile sur des projets innovants.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">Développeur Front-End - Startup ABC</div>
+                <div class="experience-date">Juin 2021 - Décembre 2022</div>
+                <p>Création d'interfaces utilisateur intuitives et responsives. Intégration de designs modernes et
+                    amélioration de l'expérience utilisateur. Utilisation de Vue.js et des dernières technologies CSS.
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">Stage Développeur Web - Agence Digital</div>
+                <div class="experience-date">Janvier 2021 - Mai 2021</div>
+                <p>Participation au développement de sites web pour divers clients. Apprentissage des bonnes pratiques
+                    de développement et travail en équipe sur des projets réels.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>CV</h2>
+            <p>Téléchargez mon CV pour plus de détails sur mon parcours et mes compétences.</p>
+            <br>
+            <a href="cv.pdf" class="cv-button" download>
+                <i class="fas fa-download"></i> Télécharger mon CV
+            </a>
+        </section>
+
+        <section class="section">
+            <h2>Réseaux Sociaux</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tristanduchamp" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/tristanduchampdv" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://twitter.com/tristanduchamp" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+                <a href="mailto:tristan.duchamp@email.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
